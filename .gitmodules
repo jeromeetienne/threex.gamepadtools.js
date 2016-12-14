@@ -1,0 +1,3 @@
+[submodule "vendor/phoneasvrcontroller.js"]
+	path = vendor/phoneasvrcontroller.js
+	url = git@github.com:jeromeetienne/phoneasvrcontroller.js.git
