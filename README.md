@@ -1,16 +1,24 @@
 # threex.gamepadtools.js
-recognize gestures on a gamepad trackpad 
-It contains various tools to handle gamepads.
-Gamepads are exposed to the browser via the [gamepad API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API).
+It contains various tools to handle gamepads e.g. button touchStart/touchEnd event on gamepad buttons
+or gesture recognition on gamepad trackpad.
+In virtual reality, controllers tends to have trackpads e.g. HTC Vive or Daydream controllers.
+threex.gamepadtool.js is able to recognize swipe gesture on trackpad 
+and even the cute [1$ unistroke recognizer](http://depts.washington.edu/aimgroup/proj/dollar).
 
-Checkout the [basic.html example](). It is a simple, hopefully educational, examples 
-on how to use those three.js extension. btw nothing here is three.js specific 
+Thus you will be able to easily recognize a 'swipe left' on your daydream controller,
+or a 'delete gesture' on your HTC Vive.
+
+Checkout the [basic.html example](https://github.com/jeromeetienne/threex.gamepadtools.js/blob/master/examples/basic.html). 
+It is a simple, hopefully educational, example
+on how to use those three.js extensions. btw nothing here is three.js specific 
 you can easily use those extensions with another 3d engine.
 
 # threex.gamepadsignals.js - [source](https://github.com/jeromeetienne/threex.gamepadtools.js/blob/master/src/threex.gamepadsignals.js)
 It monitors the gamepad and notify signals.
 It will notifies a **touchStart event** when a button of the gamepad is just started to be pressed,
-and notifies a **touchEnd event** when the button is released
+and notifies a **touchEnd event** when the button is released.
+Gamepads are exposed to the browser via the [gamepad API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API).
+
 
 ```javascript
 // create gamepadSignals
