@@ -66,7 +66,7 @@ gamepadOneDollar.signals.result.add(function(result){
 
 It monitor the trackpads of a gamepad and recognize swipes on it.
 
-```
+```javaxscript
 // create gamepadSwipe
 var gamepadSwipe = new THREEx.GamepadSwipe(gamepadSignals)
 // listen to gamepadSwipe signals 
@@ -79,7 +79,7 @@ gamepadSwipe.signals.swipe.add(function(direction){
 a similar API as the 1$ Unistroke Recognizer.
 It is used by threex.gamepadswipe.js to detect swipes on a gamepad trackpad (e.g. the one on HTCVive controller, or on Daydream controller).
 
-```
+```javascript
 // create the swipe detector
 var swipeDetector = new SwipeDetector()
 
@@ -88,10 +88,3 @@ var swipeDetector = new SwipeDetector()
 // - swipeDetector.update(x,y) when you move the touch while remaining touched - touchMove
 // - swipeDetector.end(x,y) when you stop touching the trackpad - touchEnd
 ```
-
-
-
-# TODO
-- rename it threex.gamepadtools.js
-- rewrite examples with threex.gameswipe.js
-- maybe write a threex.gamepadonedollargestures.js
