@@ -8,7 +8,7 @@ and even the cute [1$ unistroke recognizer](http://depts.washington.edu/aimgroup
 Thus you will be able to easily recognize a 'swipe left' on your daydream controller,
 or a 'delete gesture' on your HTC Vive.
 
-# Get Started With Basics - [source](https://github.com/jeromeetienne/threex.gamepadtools.js/blob/master/examples/basic.html)
+# Start with the Example - [source](https://github.com/jeromeetienne/threex.gamepadtools.js/blob/master/examples/basic.html)
 Checkout the [basic.html example](https://github.com/jeromeetienne/threex.gamepadtools.js/blob/master/examples/basic.html). 
 It is a simple, hopefully educational, example
 on how to use those three.js extensions. btw nothing here is three.js specific 
