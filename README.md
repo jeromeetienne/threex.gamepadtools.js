@@ -48,6 +48,7 @@ by [nok](http://nok.onl)
 ```javascript
 // create gamepadOneDollar
 var gamepadOneDollar = new THREEx.GamepadOneDollar(gamepadSignals)
+
 // periodically update gamepadOneDollar with the gamepad states
 onRenderFcts.push(function(){
 	// get current gamepad state
@@ -56,6 +57,7 @@ onRenderFcts.push(function(){
 	// update gamepadOneDollar with the current gamepad
 	gamepadOneDollar.update(gamepad)		
 })	
+
 // listen to recognizer result
 gamepadOneDollar.signals.result.add(function(result){
 	console.log('recognize gesture', result.name)
@@ -66,17 +68,18 @@ gamepadOneDollar.signals.result.add(function(result){
 
 It monitor the trackpads of a gamepad and recognize swipes on it.
 
-```javaxscript
+```javascript
 // create gamepadSwipe
 var gamepadSwipe = new THREEx.GamepadSwipe(gamepadSignals)
+
 // listen to gamepadSwipe signals 
 gamepadSwipe.signals.swipe.add(function(direction){
 	console.log('notified signals swipe direction', direction)
 })
 ```
 
-# swipedetector.js - [source](https://github.com/jeromeetienne/threex.gamepadtools.js/blob/master/src/swipedetector.js): it is a swipe detector using
-a similar API as the 1$ Unistroke Recognizer.
+# swipedetector.js - [source](https://github.com/jeromeetienne/threex.gamepadtools.js/blob/master/src/swipedetector.js):
+it is a swipe detector using a similar API as the 1$ Unistroke Recognizer.
 It is used by threex.gamepadswipe.js to detect swipes on a gamepad trackpad (e.g. the one on HTCVive controller, or on Daydream controller).
 
 ```javascript
